@@ -6,16 +6,16 @@ Using transformer configs, kustomize can be "taught" about the structure of a Ro
 leverage kustomize features such as ConfigMap/Secret generators, variable references, and common
 labels & annotations. To use Rollouts with kustomize:
 
-1. Download [`rollout-transform.yaml`](kustomize/rollout-transform.yaml) into your kustomize directory.
+1. Download [`rollout-transform-2023-10-09.yaml`](kustomize/rollout-transform-2023-10-09.yaml) into your kustomize directory.
 
-2. Include `rollout-transform.yaml` in your kustomize `configurations` section:
+2. Include `rollout-transform-2023-10-09.yaml` in your kustomize `configurations` section:
 
 ```yaml
 kind: Kustomization
 apiVersion: kustomize.config.k8s.io/v1beta1
 
 configurations:
-- rollout-transform.yaml
+- rollout-transform-2023-10-09.yaml
 ```
 
 An example kustomize app demonstrating the ability to use transformers with Rollouts can be seen
@@ -25,7 +25,7 @@ An example kustomize app demonstrating the ability to use transformers with Roll
 
 ```yaml
 configurations:
-  - https://argoproj.github.io/argo-rollouts/features/kustomize/rollout-transform.yaml
+  - https://argoproj.github.io/argo-rollouts/features/kustomize/rollout-transform-2023-10-09.yaml
 ```
 
 - With Kustomize 4.5.5 kustomize can use kubernetes OpenAPI data to get merge key and patch strategy information about [resource types](https://kubectl.docs.kubernetes.io/references/kustomize/kustomization/openapi). For example, given the following rollout:
