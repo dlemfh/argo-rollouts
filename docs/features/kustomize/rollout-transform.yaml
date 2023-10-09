@@ -203,6 +203,11 @@ commonLabels:
   create: false
   kind: Rollout
 
+templateLabels:
+- path: spec/template/metadata/labels
+  create: true
+  kind: Rollout
+
 # https://github.com/kubernetes-sigs/kustomize/blob/master/api/konfig/builtinpluginconsts/commonannotations.go
 commonAnnotations:
 - path: spec/template/metadata/annotations
