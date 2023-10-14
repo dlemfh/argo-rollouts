@@ -4,6 +4,7 @@ metadata:
   annotations:
     foo: bar
   labels:
+    baz: qux
     foo: bar
   name: my-robot
 ---
@@ -15,6 +16,7 @@ metadata:
   annotations:
     foo: bar
   labels:
+    baz: qux
     foo: bar
   name: my-guestbook-cm-m2mg5mb749
 ---
@@ -26,6 +28,7 @@ metadata:
   annotations:
     foo: bar
   labels:
+    baz: qux
     foo: bar
   name: my-guestbook-secret-ccbkcc9264
 type: Opaque
@@ -36,6 +39,7 @@ metadata:
   annotations:
     foo: bar
   labels:
+    baz: qux
     foo: bar
   name: my-guestbook-canary-svc
 spec:
@@ -53,6 +57,7 @@ metadata:
   annotations:
     foo: bar
   labels:
+    baz: qux
     foo: bar
   name: my-guestbook-stable-svc
 spec:
@@ -70,6 +75,7 @@ metadata:
   annotations:
     foo: bar
   labels:
+    baz: qux
     foo: bar
   name: my-deployment
 spec:
@@ -83,6 +89,7 @@ spec:
         foo: bar
       labels:
         app: nginx
+        baz: qux
         foo: bar
     spec:
       containers:
@@ -97,6 +104,7 @@ metadata:
   annotations:
     foo: bar
   labels:
+    baz: qux
     foo: bar
   name: my-random-fail
 spec:
@@ -131,6 +139,7 @@ metadata:
   annotations:
     foo: bar
   labels:
+    baz: qux
     foo: bar
   name: my-experiment
 spec:
@@ -164,6 +173,7 @@ metadata:
   annotations:
     foo: bar
   labels:
+    baz: qux
     foo: bar
   name: my-guestbook
 spec:
@@ -211,6 +221,7 @@ spec:
         foo: bar
       labels:
         app: guestbook
+        baz: qux
         foo: bar
     spec:
       affinity:
@@ -265,6 +276,7 @@ metadata:
   annotations:
     foo: bar
   labels:
+    baz: qux
     foo: bar
   name: my-hpa
 spec:
@@ -286,6 +298,7 @@ metadata:
   annotations:
     foo: bar
   labels:
+    baz: qux
     foo: bar
   name: my-extensions-ingress
 spec:
@@ -303,6 +316,7 @@ metadata:
   annotations:
     foo: bar
   labels:
+    baz: qux
     foo: bar
   name: my-mapping
 spec:
@@ -316,6 +330,7 @@ metadata:
   annotations:
     foo: bar
   labels:
+    baz: qux
     foo: bar
   name: my-guestbook-destrule
 spec:
@@ -334,6 +349,7 @@ metadata:
   annotations:
     foo: bar
   labels:
+    baz: qux
     foo: bar
   name: my-guestbook-vsvc
 spec:
@@ -357,6 +373,7 @@ metadata:
   annotations:
     foo: bar
   labels:
+    baz: qux
     foo: bar
   name: my-networking-ingress
 spec:

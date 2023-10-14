@@ -19,8 +19,15 @@ secretGenerator:
   literals:
   - password=Pa55w0rd
 
-commonLabels:
-  foo: bar
+labels:
+- includeSelectors: true
+  includeTemplates: true
+  pairs:
+    foo: bar
+- includeSelectors: false
+  includeTemplates: true
+  pairs:
+    baz: qux
 
 commonAnnotations:
   foo: bar
